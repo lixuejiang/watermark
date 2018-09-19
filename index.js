@@ -32,12 +32,12 @@ function watermark(sourceImgName) {
 
   console.log(sWidth, sHeight, wmWidth, wmHeight)
   if (sWidth < wmWidth) {
-    wmWidth = wmWidth / 10
-    wmHeight = wmHeight / 10
+    wmWidth = (sWidth * 550) /4032
+    // wmHeight = wmHeight / 10
     watermarkImg.size(wmWidth, wmHeight)
   } else {
-    wmWidth = wmWidth / 2
-    wmHeight = wmHeight /2
+    wmWidth = wmWidth
+    wmHeight = wmHeight
     watermarkImg.size(wmWidth, wmHeight)
   }
 
